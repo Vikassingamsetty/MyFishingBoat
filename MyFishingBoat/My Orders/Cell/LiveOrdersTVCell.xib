@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fedra Sans Std Bold.otf">
+            <string>FedraSansStd-Bold</string>
+        </array>
+        <array key="MYRIADPRO-BOLD.OTF">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MYRIADPRO-SEMIBOLD.OTF">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="KGk-i7-Jjw" customClass="LiveOrdersTVCell" customModule="MyFishingBoat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-RT-sHh" customClass="CardView" customModule="MyFishingBoat" customModuleProvider="target">
+                        <rect key="frame" x="15" y="12" width="315" height="166"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORDER NUMBER " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoM-01-NOi">
+                                <rect key="frame" x="30" y="20" width="83" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="6Tj-xy-J6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="10"/>
+                                <color key="textColor" name="appColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNO-6h-Fpa">
+                                <rect key="frame" x="143" y="20" width="50.5" height="12"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="10"/>
+                                <color key="textColor" name="appColorGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9j-b3-oJB">
+                                <rect key="frame" x="30" y="65.5" width="92" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Yvx-TZ-Uut"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="18"/>
+                                <state key="normal" title="TOTAL PAY">
+                                    <color key="titleColor" name="appColorBlue"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-0z-eZ9">
+                                <rect key="frame" x="30" y="85.5" width="7" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="items" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blf-9b-yyk">
+                                <rect key="frame" x="40" y="85.5" width="29.5" height="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIh-eE-aCO">
+                                <rect key="frame" x="10" y="50" width="295" height="0.5"/>
+                                <color key="backgroundColor" name="appColorGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="tAC-lK-6rt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRI-wr-H2s">
+                                <rect key="frame" x="50" y="112.5" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cP5-2d-8d7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="11"/>
+                                <state key="normal" title="CHECK ORDER STATUS">
+                                    <color key="titleColor" red="0.32156862745098036" green="0.32549019607843138" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-64-lzg">
+                                <rect key="frame" x="255" y="65.5" width="30" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Vwi-ym-NCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="18"/>
+                                <color key="textColor" name="appColorBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M9j-b3-oJB" firstAttribute="leading" secondItem="Rek-RT-sHh" secondAttribute="leading" constant="30" id="0KV-SJ-V7h"/>
+                            <constraint firstItem="TIh-eE-aCO" firstAttribute="leading" secondItem="Rek-RT-sHh" secondAttribute="leading" constant="10" id="0fh-Qw-tta"/>
+                            <constraint firstItem="WoM-01-NOi" firstAttribute="leading" secondItem="Rek-RT-sHh" secondAttribute="leading" constant="30" id="13S-vz-BBJ"/>
+                            <constraint firstItem="ZbT-64-lzg" firstAttribute="top" secondItem="TIh-eE-aCO" secondAttribute="bottom" constant="15" id="2w7-Yg-dhI"/>
+                            <constraint firstItem="TIh-eE-aCO" firstAttribute="top" secondItem="WoM-01-NOi" secondAttribute="bottom" constant="18" id="9Ym-W9-yye"/>
+                            <constraint firstItem="IRI-wr-H2s" firstAttribute="leading" secondItem="Rek-RT-sHh" secondAttribute="leading" constant="50" id="Akb-ob-Foq"/>
+                            <constraint firstItem="gEM-0z-eZ9" firstAttribute="centerY" secondItem="Blf-9b-yyk" secondAttribute="centerY" id="EDg-FE-Qjb"/>
+                            <constraint firstItem="IRI-wr-H2s" firstAttribute="top" secondItem="gEM-0z-eZ9" secondAttribute="bottom" constant="13" id="Pzd-94-U7D"/>
+                            <constraint firstAttribute="trailing" secondItem="TIh-eE-aCO" secondAttribute="trailing" constant="10" id="QZX-P8-V5h"/>
+                            <constraint firstItem="WNO-6h-Fpa" firstAttribute="leading" secondItem="WoM-01-NOi" secondAttribute="trailing" constant="30" id="YQW-kq-wlN"/>
+                            <constraint firstItem="WoM-01-NOi" firstAttribute="top" secondItem="Rek-RT-sHh" secondAttribute="top" constant="20" id="ZfA-a5-5pg"/>
+                            <constraint firstItem="WoM-01-NOi" firstAttribute="centerY" secondItem="WNO-6h-Fpa" secondAttribute="centerY" id="krh-7U-mQS"/>
+                            <constraint firstItem="Blf-9b-yyk" firstAttribute="leading" secondItem="gEM-0z-eZ9" secondAttribute="trailing" constant="3" id="lT0-T5-N2j"/>
+                            <constraint firstAttribute="trailing" secondItem="ZbT-64-lzg" secondAttribute="trailing" constant="30" id="ltb-df-TQU"/>
+                            <constraint firstAttribute="trailing" secondItem="IRI-wr-H2s" secondAttribute="trailing" constant="50" id="sIg-hh-KV1"/>
+                            <constraint firstItem="gEM-0z-eZ9" firstAttribute="top" secondItem="M9j-b3-oJB" secondAttribute="bottom" constant="5" id="sw9-5o-jJR"/>
+                            <constraint firstItem="gEM-0z-eZ9" firstAttribute="leading" secondItem="Rek-RT-sHh" secondAttribute="leading" constant="30" id="xcy-b9-g2S"/>
+                            <constraint firstItem="M9j-b3-oJB" firstAttribute="top" secondItem="TIh-eE-aCO" secondAttribute="bottom" constant="15" id="yhb-i8-Kk9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Rek-RT-sHh" secondAttribute="trailing" constant="15" id="W7E-cz-MqZ"/>
+                    <constraint firstItem="Rek-RT-sHh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Xaw-6S-fea"/>
+                    <constraint firstAttribute="bottom" secondItem="Rek-RT-sHh" secondAttribute="bottom" constant="12" id="Zja-hf-tB9"/>
+                    <constraint firstItem="Rek-RT-sHh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bQb-u0-qoK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="orderNumberLbl" destination="WNO-6h-Fpa" id="7Rs-uq-X0G"/>
+                <outlet property="orderStatusBtn" destination="IRI-wr-H2s" id="OVN-RP-SS5"/>
+                <outlet property="totalAmountLbl" destination="ZbT-64-lzg" id="Vcu-s7-3nT"/>
+                <outlet property="totalItemsLbl" destination="gEM-0z-eZ9" id="08g-0C-lPt"/>
+            </connections>
+            <point key="canvasLocation" x="197.59999999999999" y="156.07196401799101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appColorBlue">
+            <color red="0.0" green="0.11400000005960464" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appColorGray">
+            <color red="0.46700000762939453" green="0.47499999403953552" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fedra Sans Std Bold.otf">
+            <string>FedraSansStd-Bold</string>
+        </array>
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddresshDetailsCVCell" customModule="MyFishingBoat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Y-aT-IE0">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="210"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-jW-efj">
+                                <rect key="frame" x="25" y="10" width="83" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx9-6o-iPk">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="DAC-kO-mei"/>
+                                            <constraint firstAttribute="width" constant="46" id="ngO-Jc-cB3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="10"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.43529411764705883" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9874563210" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNU-LY-8yp">
+                                        <rect key="frame" x="0.0" y="25" width="83" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="uE1-7I-WiY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1eM-hJ-d60">
+                                <rect key="frame" x="25" y="82" width="115" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAYMENT TYPE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7Z-XN-Osj">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="ejP-gb-qYY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="10"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.43529411764705883" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash on delivery" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-88-5SX">
+                                        <rect key="frame" x="0.0" y="25" width="115" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="I2F-lh-FKZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DfY-7C-EDA">
+                                <rect key="frame" x="189" y="10" width="143" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-hf-vvZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="JA0-aS-HCT"/>
+                                            <constraint firstAttribute="width" constant="32" id="iZg-Tg-CKd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="10"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.43529411764705883" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR 18, 2020, 7:11:41 PM APR 18, 2020, 7:11:41 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R83-hX-5YG">
+                                        <rect key="frame" x="0.0" y="25" width="143" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="143" id="akx-kB-TZM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                        <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eiq-cv-Qci">
+                                <rect key="frame" x="189" y="82" width="143" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELIVERED TO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl6-zg-cnZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="wdT-6O-0Pj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="10"/>
+                                        <color key="textColor" red="0.42745098039215684" green="0.43529411764705883" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DoorNo: 404, 4th floor, Mulbary block, l&amp;t Eden park, Siruseri, SIPCOT, Chennai." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zc-vA-Vfx">
+                                        <rect key="frame" x="0.0" y="25" width="143" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="143" id="d69-ok-nFf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.44313725490196076" green="0.45098039215686275" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DfY-7C-EDA" firstAttribute="top" secondItem="75Y-aT-IE0" secondAttribute="top" constant="10" id="1Ts-0f-t8h"/>
+                            <constraint firstItem="1eM-hJ-d60" firstAttribute="leading" secondItem="75Y-aT-IE0" secondAttribute="leading" constant="25" id="Be6-TV-29z"/>
+                            <constraint firstItem="1eM-hJ-d60" firstAttribute="top" secondItem="eiq-cv-Qci" secondAttribute="top" id="FZ2-gR-5t3"/>
+                            <constraint firstItem="fY3-jW-efj" firstAttribute="top" secondItem="75Y-aT-IE0" secondAttribute="top" constant="10" id="HAv-yf-YZs"/>
+                            <constraint firstAttribute="trailing" secondItem="DfY-7C-EDA" secondAttribute="trailing" constant="25" id="Lgt-lq-Yvq"/>
+                            <constraint firstItem="fY3-jW-efj" firstAttribute="leading" secondItem="75Y-aT-IE0" secondAttribute="leading" constant="25" id="OUA-Al-1im"/>
+                            <constraint firstItem="1eM-hJ-d60" firstAttribute="top" secondItem="fY3-jW-efj" secondAttribute="bottom" constant="33" id="byw-Ss-8Xg"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eiq-cv-Qci" secondAttribute="bottom" constant="5" id="xeJ-tW-HzH"/>
+                            <constraint firstAttribute="trailing" secondItem="eiq-cv-Qci" secondAttribute="trailing" constant="25" id="zaI-yJ-akL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="75Y-aT-IE0" secondAttribute="bottom" id="Ex9-Ed-Ky8"/>
+                <constraint firstItem="75Y-aT-IE0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iFb-ol-1h9"/>
+                <constraint firstItem="75Y-aT-IE0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o6q-A9-5Ja"/>
+                <constraint firstAttribute="trailing" secondItem="75Y-aT-IE0" secondAttribute="trailing" id="oIc-tz-j8K"/>
+            </constraints>
+            <size key="customSize" width="363" height="200"/>
+            <connections>
+                <outlet property="dateofDeliveryLbl" destination="R83-hX-5YG" id="Kor-xm-IzG"/>
+                <outlet property="deliveredAddrLbl" destination="3Zc-vA-Vfx" id="RlN-h5-H49"/>
+                <outlet property="deliveryStaticLbl" destination="Bl6-zg-cnZ" id="ysl-n6-HPv"/>
+                <outlet property="paymentTypeLbl" destination="cf0-88-5SX" id="dWU-ta-3nb"/>
+                <outlet property="phoneNumberLbl" destination="PNU-LY-8yp" id="Qi5-PR-yke"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="141.29464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

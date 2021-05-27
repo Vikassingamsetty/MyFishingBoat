@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fedra Sans Std Bold.otf">
+            <string>FedraSansStd-Bold</string>
+        </array>
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="KGk-i7-Jjw" customClass="MapTVCell" customModule="MyFishingBoat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORDER NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkJ-WX-0mS">
+                        <rect key="frame" x="30" y="10" width="112.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="MK1-g6-YAJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FedraSansStd-Bold" family="Fedra Sans Std" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#165779AF7863" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-30-h90">
+                        <rect key="frame" x="167.5" y="10" width="87.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ugv-b8-v2s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seR-XB-1jP">
+                        <rect key="frame" x="20" y="35" width="300" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="N3p-mZ-Afy"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jp-cy-FV3" customClass="GMSMapView">
+                        <rect key="frame" x="10" y="51" width="320" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKf-1c-TJN">
+                                <rect key="frame" x="140" y="80" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="7e8-dZ-aIW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0Jp-cy-FV3" secondAttribute="trailing" constant="10" id="5LR-Di-0FG"/>
+                    <constraint firstItem="0Jp-cy-FV3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Pyv-Ew-Kkj"/>
+                    <constraint firstAttribute="trailing" secondItem="seR-XB-1jP" secondAttribute="trailing" constant="20" id="QB0-oT-8PW"/>
+                    <constraint firstItem="0Jp-cy-FV3" firstAttribute="top" secondItem="seR-XB-1jP" secondAttribute="bottom" constant="15" id="RZH-xp-Xfh"/>
+                    <constraint firstItem="hkJ-WX-0mS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Z3a-iA-2r6"/>
+                    <constraint firstItem="seR-XB-1jP" firstAttribute="top" secondItem="hkJ-WX-0mS" secondAttribute="bottom" constant="10" id="cDz-cc-ZZP"/>
+                    <constraint firstItem="hkJ-WX-0mS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="dUa-Li-8XA"/>
+                    <constraint firstItem="uc2-30-h90" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mNb-8L-bew"/>
+                    <constraint firstItem="seR-XB-1jP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qkN-yk-UPG"/>
+                    <constraint firstAttribute="bottom" secondItem="0Jp-cy-FV3" secondAttribute="bottom" constant="15" id="tc4-ss-aOi"/>
+                    <constraint firstItem="uc2-30-h90" firstAttribute="leading" secondItem="hkJ-WX-0mS" secondAttribute="trailing" constant="25" id="xEF-8R-14o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="GoogleMapsView" destination="0Jp-cy-FV3" id="h2t-Ix-TQu"/>
+                <outlet property="orderNumberLbl" destination="uc2-30-h90" id="cci-Mz-x7X"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="162.38839285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

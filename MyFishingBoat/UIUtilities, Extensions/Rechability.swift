@@ -1,0 +1,67 @@
+//
+//  Rechability.swift
+//  MyFishingBoat
+//
+//  Created by Appcare Apple on 16/07/20.
+//  Copyright © 2020 Anil. All rights reserved.
+//
+
+import Foundation
+
+import SystemConfiguration
+
+public class Reachability {
+
+    class func isConnectedToNetwork() -> Bool {
+
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+            return false
+        }
+
+        /* Only Working for WIFI
+        let isReachable = flags == .reachable
+        let needsConnection = flags == .connectionRequired
+
+        return isReachable && !needsConnection
+        */
+
+        // Working for Cellular and WIFI
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        let ret = (isReachable && !needsConnection)
+
+        return ret
+
+    }
+}
+
+
+
+//call the below where ever the network call is happening don't forget to do this
+//
+//if Reachability.isConnectedToNetwork() {
+//    HomeService.instance.homeData { (status) in
+//        if status {
+//            print("Success")
+//            self.banners = HomeService.instance.banners
+//            self.categories = HomeService.instance.categories
+//            self.addsBanerCollectionView.reloadData()
+//            self.categoryCollectionView.reloadData()
+//            //                print(self.banners)
+//            //                print(self.categories)
+//        }
+//    }
+//}else{
+//    alertActionFunc2(messageToDisplay: "Please check your internet connection")
+//}

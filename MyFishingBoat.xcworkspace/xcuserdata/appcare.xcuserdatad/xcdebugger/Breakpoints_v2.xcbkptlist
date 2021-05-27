@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2789E013-5DCC-491E-8A0C-E39E20CBCA20"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "559F5F1E-2DF5-4500-B1FC-17ACE65D9913"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFishingBoat/Home/UI/ProductDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "ratingSubmitApi()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "559F5F1E-2DF5-4500-B1FC-17ACE65D9913 - 6a66bc059d4fd6d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFishingBoat.ProductDetailsViewController.ratingSubmitApi() -&gt; ()"
+                  moduleName = "MyFishingBoat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/appcare/Desktop/MyFishigBoat@@2/myfishingboat-2/MyFishingBoat/Home/UI/ProductDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "783">
+               </Location>
+               <Location
+                  uuid = "559F5F1E-2DF5-4500-B1FC-17ACE65D9913 - 9fe0cdd37dd44e65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data) -&gt; () in MyFishingBoat.ProductDetailsViewController.ratingSubmitApi() -&gt; ()"
+                  moduleName = "MyFishingBoat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/appcare/Desktop/MyFishigBoat@@2/myfishingboat-2/MyFishingBoat/Home/UI/ProductDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "375"
+                  endingLineNumber = "375"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

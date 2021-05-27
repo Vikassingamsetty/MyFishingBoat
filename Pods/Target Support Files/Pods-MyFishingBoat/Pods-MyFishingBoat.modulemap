@@ -1,0 +1,6 @@
+framework module Pods_MyFishingBoat {
+  umbrella header "Pods-MyFishingBoat-umbrella.h"
+
+  export *
+  module * { export * }
+}
